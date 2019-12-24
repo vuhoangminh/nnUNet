@@ -63,6 +63,8 @@ class ConvDropoutNormNonlin(nn.Module):
         return self.lrelu(self.instnorm(x))
 
 
+
+
 class StackedConvLayers(nn.Module):
     def __init__(self, input_feature_channels, output_feature_channels, num_convs,
                  conv_op=nn.Conv2d, conv_kwargs=None,
